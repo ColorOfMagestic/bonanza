@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Bonanza</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <div class="app_wrapper flex">
+        <img class="abs decor top_app" src="img/candy_decor.png" alt="" />
+        <img
+          class="decor_mobile abs decor_mobile_candy1"
+          src="img/candy_decor_m.png"
+          alt=""
+        />
+        <img class="abs decor decor1" src="img/decor1.png" alt="" />
+        <img class="abs decor decor2" src="img/decor2.png" alt="" />
+        <img class="decor_mobile decor_mobile_losung" src="img/losung_m.png" alt="" />
+        <img class="decor_mobile decor_mobile_candy2 abs" src="img/candy_decor2_m.png" alt="" />
+        <div class="app_banner">
+          <div class="app_banner_logo">
+            <img src="img/logo.png" alt="Логотип" />
+          </div>
+          <div class="app_banner_info">
+            <img class="candy"  src="img/candy.png" alt="" />
+            <img class="app_banner_info-losung abs " src="img/losung.png" alt="" />
+            <img class="abs candy_green"  src="img/green_candy.png" alt="" />
+            <img class="abs candy_orange"  src="img/orange_candy.png" alt="" />
+          </div>
+        </div>
+        <form action="#" class="form app_form">
+          <h2 class="form_title">Регистрация</h2>
+          <div class="form_input form_input-tel">
+            <label for="tel">Номер телефона</label>
+            <input type="tel" name="tel" id="tel" placeholder="+7 ___ ___ __ __" required />
+            <span>На этот номер придет sms-код</span>
+          </div>
+          <div class="form_input form_input-pass">
+            <label for="pass">Пароль</label>
+            <input type="password" name="pass" id="pass" placeholder="Придумайте пароль" required />
+            <span>Не менее 8 знаков</span>
+            <span>Цифры и латинские буквы — обязательно</span>
+          </div>
+
+          <div class="form_input form_input-check">
+            <label>
+              <input class="check-box" type="checkbox" checked/>
+              <span class="check-style"></span>
+            </label>
+            <span class="input-check-text">
+              Настоящим я подтверждаю, что мне есть 21 год, я ознакомлен и
+              полностью согласен с <a href="#">Правилами</a> приема ставок и
+              выплаты выигрышей и
+              <a href="#"> Политикой конфиденциальности</a> в букмекерской
+              конторе Fonbet, а также даю свое <a href="#">согласие</a> на
+              обработку моих персональных данных ТОО «Domina Fortuna (Домина
+              Фортуна)» и подтверждаю их достоверность
+            </span>
+          </div>
+          <button class="btn form_submit" type="submit">Регистрация</button>
+        </form>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
